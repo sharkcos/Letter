@@ -1,0 +1,140 @@
+/* Adding a clean reset for consistent sizing */
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background-image: url('https://i.pinimg.com/736x/c1/24/98/c1249840b1cb6e74ef7d40e8544c51bd.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   margin: 0;
+   padding: 20px;
+   /* Changed to flex-column so elements stack neatly from top to bottom */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-height: 100vh;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+   font-size: 40px;
+   color: red;
+   text-align: center;
+   margin-bottom: 10px;
+   font-family: cursive;
+   
+}
+
+h2 {
+   text-align: center;
+   color: red;
+   font-family: cursive;
+}
+
+img {
+   max-width: 100%;
+   height: auto; 
+   border-radius: 15px;
+   filter: drop-shadow(0px 8px 15px rgba(255, 105, 180, 0.4));
+}
+
+.pic {
+   width: 200%;
+   margin: 10px auto;
+}
+
+
+.border {
+   text-align: left;
+   color: #3a1120;
+   background-color: rgba(255, 255, 255, 0.65);
+   padding: 30px;
+   border-radius: 20px;
+   border: 1px solid rgba(255, 192, 203, 0.8);
+   backdrop-filter: blur(10px);
+   filter: drop-shadow(1px 1px 20px hotpink);
+   max-width: 85%;
+   line-height: 1.6;
+   letter-spacing: 2px;
+   text-align: justify;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-bottom: 25px;
+}
+
+.border2 {
+   border-style: outset;
+   border-radius: 20px;
+   border: 2px solid pink;
+   backdrop-filter: blur(5px);
+   box-shadow: 0 0 30px hotpink;
+   padding: 20px;
+}
+
+
+div.border:nth-of-type(odd) {
+   align-self: flex-start;
+   margin-left: 5%;
+}
+
+div.border:nth-of-type(even) {
+   align-self: flex-end;
+   margin-right: 5%;
+}
+
+
+.card-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 20px; 
+   flex-wrap: wrap; 
+   width: 100%;
+   max-width: 800px;
+}
+
+.card {
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   width: 100%;
+   max-width: 280px; 
+   padding: 20px;
+   margin-top: 20px;
+   border-radius: 20px;
+   background-color: rgba(255, 255, 255, 0.4);
+   border: 2px solid rgba(255, 192, 203, 0.5);
+   backdrop-filter: blur(5px);
+   box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+   filter: drop-shadow(1px 1px 20px hotpink);
+}
+
+audio {
+   margin-top: 15px;
+   outline: none;
+   width: 100%;
+}
+
+.button-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   padding-bottom: 30px;
+}
+
+.proceed {
+   background-color: #ff69b4;
+   color: white;
+   padding: 15px 40px;
+   font-size: 20px;
+   font-weight: bold;
+   text-decoration: none; /* Removes the underline */
+   border-radius: 50px; /* Makes it pill-shaped */
+   box-shadow: 0 8px 15px rgba(255, 105, 180, 0.4);
+   filter: drop-shadow(1px 1px 20px hotpink);
+   border: 2px solid white;
+}
